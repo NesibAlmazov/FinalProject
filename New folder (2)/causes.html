@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Usaqlara komek</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Contact Head -->
+        <section>
+            <div class="col-12 conhead">
+
+                <div id="top" class="call col-lg-4">
+                    <p> <span class="text-white-50">Have Any Questions?</span> Call Us <a
+                            href="tel:+994503092928">(50)309-29-28</a></p>
+                </div>
+                <div class="chlan col-lg-1">
+                    <p>En</p>
+                </div>
+                <div class="col-lg-5 chtext">
+
+                </div>
+                <div class="chsocial col-lg-2">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://wa.me/994503092928 "><i class="fab fa-whatsapp-square"></i></a>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Logo Login -->
+        <section>
+
+            <div class=" logo">
+                <div class="imglogo col-lg-6">
+                    <img src="img/logo.png" alt="">
+                </div>
+
+                <div class="logreg col-lg4">
+                    <div class=" sing">
+                        <button cl onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Login</button>
+
+                        <div id="id01" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class=" register">
+                        <button type="button" class="btn btn-outline-secondary btnreg">Resgiter</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Navbar -->
+        <section class="navf">
+
+            <div class="navbarheader col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link navsec" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle navsec" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="about.html">About us</a>
+                                    <a class="dropdown-item" href="ourteam.html">Our team</a>
+                                    <a class="dropdown-item" href="faqs.html">Faq`s</a>
+                                    <a class="dropdown-item" href="testimonial.html">Testemonail</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link navsec" href="#">Causes <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link navsec" href="#">Event <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link navsec" href="#">Product <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link navsec" href="contact.html">Contact Us <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 srchbtn" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+    <!-- Header End -->
+    <div class="col-12 cont-ht" style="margin-top: -30px;">
+        <img src="img/causes/head.jpg" class="cont-img" alt="">
+        <div class="cont-txt">
+            <h1>Causes</h1>
+        </div>
+    </div>
+
+    <!-- Causes Filter -->
+    <div class="causes">
+        <div class="container aaa">
+            <div id="myBtnContainer col-2">
+                <button class="btn " onclick="filterSelection('all')"> Show all</button> <br>
+                <button class="btn" onclick="filterSelection('nature')"> Nature</button> <br>
+                <button class="btn" onclick="filterSelection('cars')"> Cars</button> <br>
+                <button class="btn" onclick="filterSelection('people')"> People</button>
+              </div>
+              
+              <!-- Portfolio Gallery Grid -->
+              <div class="rows col-lg-8">
+                <div class="column nature">
+                  <div class="content">
+                    <img src="img/causes/head.jpg" alt="Mountains" style="width:100%">
+                    <h4>Mountains</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="column nature">
+                  <div class="content">
+                  <img src="img/causes/head.jpg" alt="Lights" style="width:100%">
+                    <h4>Lights</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="column nature">
+                  <div class="content">
+                  <img src="img/causes/head.jpg" alt="Nature" style="width:100%">
+                    <h4>Forest</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                
+                <div class="column cars">
+                  <div class="content">
+                    <img src="img/causes/head.jpg" alt="Car" style="width:100%">
+                    <h4>Retro</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="column cars">
+                  <div class="content">
+                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
+                    <h4>Fast</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="column cars">
+                  <div class="content">
+                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
+                    <h4>Classic</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              
+                <div class="column people">
+                  <div class="content">
+                    <img src="img/causes/head.jpg" alt="Car" style="width:100%">
+                    <h4>Girl</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="column people">
+                  <div class="content">
+                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+                <div class="column people">
+                  <div class="content">
+                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
+                    <h4>Woman</h4>
+                    <p>Lorem ipsum dolor..</p>
+                  </div>
+                </div>
+              <!-- END GRID -->
+              </div>
+              
+              <!-- END MAIN -->
+              </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="col-12 firstfooter" style="background-image: url(img/back/footer.jpg);">
+            <div class="foot">
+                <div class="col-lg-4 about-footer">
+                    <img src="img/footer-logo-2.png" alt="">
+                    <p>Core values are the fundamental beliefs of a person or organization. The core values are the
+                        guiding
+                        prin ples that dictate behavior and action suas labore saperet has there any quote for write
+                        lorem
+                        percit latineu suas dummy.</p>
+                </div>
+                <div class="uselink col-lg-4">
+                    <h3>Useful Link </h3>
+                    <div class="links">
+                        <ul>
+                            <li><a href="about.html"><i class="fas fa-chevron-right zz"></i> About Us</a></li>
+                            <li><a href="ourteam.html"><i class="fas fa-chevron-right zz"></i> Our Team</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right zz"></i> Testimonials</a></li>
+                            <li><a href="faqs.html"><i class="fas fa-chevron-right zz"></i> Faq`s</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right zz"></i> Causes</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right zz"></i> Events</a></li>
+                            <li><a href=""><i class="fas fa-chevron-right zz"></i> Shop List</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right zz"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 last-news">
+                    <h3>Latest News </h3>
+                    <div class="news">
+                        <img src="img/footer/edu.jpg" alt="">
+                        <div class="news-text">
+                            <h6>Child Education in Baku!!</h6>
+                            <p>Jul 17, 2017 / Business</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="img/footer/play.jpg" alt="">
+                        <div class="news-text">
+                            <h6>Clean Water Provide by Poor People!!</h6>
+                            <p>Jul 17, 2017 / Business</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <img src="img/footer/hunger.jpg" alt="">
+                        <div class="news-text">
+                            <h6>We help the hunger People!!</h6>
+                            <p>Jul 17, 2017 / Business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 lastfooter">
+            <div class="lastfoot">
+                <div class="lf-text">
+                    <p>Copyright © 2017 Charity Point. All rights reserved</p>
+                </div>
+                <div class="lf-icon">
+                    <a href=""><i class="fab fa-facebook-f ic"></i></a> 
+                   <a href=""><i class="fab fa-instagram ic"></i></a> 
+                    <a href=""><i class="fab fa-twitter ic"></i></a> 
+                   <a href="https://wa.me/994503092928 "> <i class="fab fa-whatsapp ic"></i></a> 
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Button to Top -->
+   <div class="gotop">
+   <a href="#top" id="myBtn"><i class="fas fa-chevron-circle-up"></i></a> 
+</div>
+ 
+
+</body>
+<script src="js//script.js"></script>
+<!-- Font -->
+<script src="https://kit.fontawesome.com/6b6a535658.js" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>
