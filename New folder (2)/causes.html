@@ -152,83 +152,234 @@
             <h1>Causes</h1>
         </div>
     </div>
+<!-- Jumbotron -->
+
+<div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-danger btn-lg btnc " style="background-color: #aa1f43; color: whitesmoke;"  onclick="filterSelection('all')" role="button" >Show All Child</a>
+  </div>
 
     <!-- Causes Filter -->
     <div class="causes">
-        <div class="container aaa">
-            <div id="myBtnContainer col-2">
-                <button class="btn " onclick="filterSelection('all')"> Show all</button> <br>
-                <button class="btn" onclick="filterSelection('nature')"> Nature</button> <br>
-                <button class="btn" onclick="filterSelection('cars')"> Cars</button> <br>
-                <button class="btn" onclick="filterSelection('people')"> People</button>
+        <div class="container aaa col-12">
+            <div id="myBtnContainer col-2 btn-f" style="display: flex; flex-direction: column; flex-wrap: wrap;">
+                
+                <button class="btnc "  onclick="filterSelection('all')"> Show all</button> 
+                <button class="btnc" onclick="filterSelection('education')"> Education</button> 
+                <button class="btnc" onclick="filterSelection('cloth')"> Cloth</button> 
+                <button class="btnc" onclick="filterSelection('sturdiness')"> Sturdiness</button>
               </div>
               
               <!-- Portfolio Gallery Grid -->
-              <div class="rows col-lg-8">
-                <div class="column nature">
-                  <div class="content">
-                    <img src="img/causes/head.jpg" alt="Mountains" style="width:100%">
-                    <h4>Mountains</h4>
-                    <p>Lorem ipsum dolor..</p>
+              <div class="rows col-lg-9">
+                <div class="column education col-lg-3 col-md-4 col-sm-6">
+                  <div class="content content-index">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="img/causes/ed-1.jpg" alt="Avatar" class="img-f">
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                            <button type="button" class="btn btn-success">Donate</button>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
-                <div class="column nature">
-                  <div class="content">
-                  <img src="img/causes/head.jpg" alt="Lights" style="width:100%">
-                    <h4>Lights</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column education col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/ed-2.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
-                <div class="column nature">
-                  <div class="content">
-                  <img src="img/causes/head.jpg" alt="Nature" style="width:100%">
-                    <h4>Forest</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column education col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/ed-3.jpg" alt="Avatar" class="img-f" >
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
+                <div class="column education col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                      <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="img/causes/ed-1.jpg" alt="Avatar" class="img-f">
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>John Doe</h1> 
+                              <p>Architect & Engineer</p> 
+                              <p>We love that guy</p>
+                              <button type="button" class="btn btn-success">Donate</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
                 
-                <div class="column cars">
-                  <div class="content">
-                    <img src="img/causes/head.jpg" alt="Car" style="width:100%">
-                    <h4>Retro</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column cloth col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/cl-1.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
-                <div class="column cars">
-                  <div class="content">
-                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
-                    <h4>Fast</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column cloth col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/cl-2.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
-                <div class="column cars">
-                  <div class="content">
-                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
-                    <h4>Classic</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column cloth col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/cl-3.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="column cloth col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/cl-1.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
               
-                <div class="column people">
-                  <div class="content">
-                    <img src="img/causes/head.jpg" alt="Car" style="width:100%">
-                    <h4>Girl</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column sturdiness col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/il-1.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
-                <div class="column people">
-                  <div class="content">
-                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
-                    <h4>Man</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column sturdiness col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/il-2.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
-                <div class="column people">
-                  <div class="content">
-                  <img src="img/causes/head.jpg" alt="Car" style="width:100%">
-                    <h4>Woman</h4>
-                    <p>Lorem ipsum dolor..</p>
-                  </div>
+                <div class="column sturdiness col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/il-3.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="column sturdiness col-lg-3 col-md-4 col-sm-6">
+                    <div class="content content-index">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/causes/il-1.jpg" alt="Avatar" class="img-f">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>John Doe</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                                <button type="button" class="btn btn-success">Donate</button>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                 </div>
               <!-- END GRID -->
               </div>
@@ -237,7 +388,6 @@
               </div>
         </div>
     </div>
-
 
     <footer>
         <div class="col-12 firstfooter" style="background-image: url(img/back/footer.jpg);">

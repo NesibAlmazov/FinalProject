@@ -1022,23 +1022,38 @@ footer .lastfooter .lastfoot .lf-icon .ic {
 .causes {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* Add padding BETWEEN each column */
   /* Create three equal columns that floats next to each other */
   /* Clear floats after rows */
-  /* Content */
   /* The "show" class is added to the filtered elements */
   /* Style the buttons */
+  /* Content */
 }
 
 .causes .aaa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .causes h1 {
   font-size: 50px;
   word-break: break-all;
+}
+
+.causes .btn-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .causes .rows {
@@ -1052,7 +1067,6 @@ footer .lastfooter .lastfoot .lf-icon .ic {
 
 .causes .column {
   float: left;
-  width: 33.33%;
   display: none;
   /* Hide all elements by default */
 }
@@ -1063,16 +1077,11 @@ footer .lastfooter .lastfoot .lf-icon .ic {
   clear: both;
 }
 
-.causes .content {
-  background-color: white;
-  padding: 10px;
-}
-
 .causes .show {
   display: block;
 }
 
-.causes .btn {
+.causes .btnc {
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -1080,12 +1089,81 @@ footer .lastfooter .lastfoot .lf-icon .ic {
   cursor: pointer;
 }
 
-.causes .btn:hover {
+.causes .btnc:hover {
   background-color: #ddd;
 }
 
-.causes .btn.active {
+.causes .btnc.active {
   background-color: #666;
   color: white;
+}
+
+.causes .content {
+  background-color: white;
+  padding: 10px;
+}
+
+.causes .content-index .img-f {
+  width: 100%;
+  height: 150px;
+}
+
+.causes .content-index .flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 150px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.causes .content-index .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.causes .content-index .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.causes .content-index .flip-card-front,
+.causes .content-index .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.causes .content-index .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.causes .content-index .flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  padding-top: 15px;
+  line-height: 1;
+}
+
+.causes .content-index .flip-card-back h1 {
+  font-size: medium;
+}
+
+.causes .content-index .flip-card-back p {
+  font-size: small;
 }
 /*# sourceMappingURL=style.css.map */
